@@ -1,0 +1,17 @@
+
+-- create
+create table 830room (
+ stdId integer primary key,
+ name text not null,
+ surname text not null,
+ age text not null,
+ top text not null
+);
+
+insert into 830room values (1, 'Adilzhan', 'Erdenbaev', '17', 'IS-11');
+insert into 830room values (2, 'Aqan', 'Muhtarbek', '18', 'AU-19/1');
+insert into 830room values (3, 'Dias', 'Isenov', '17', 'IS-17');
+
+alter table 830room
+add email text;
+select * from 830room;
